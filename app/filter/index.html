@@ -1,0 +1,79 @@
+<section class="filter js__filter">
+	<div class="filter__wrapper __f">
+		<div class="filter__left-side __f js__left-side">
+			<!-- search -->
+			<input
+				class="filter__input filter--search js__search"
+				type="text"
+				placeholder="Поиск по названию"
+				id="name"
+			/>
+
+			<label class="filter--label js__btn" for="name"> Искать </label>
+			<!-- /search -->
+
+			<!-- brand -->
+			<div class="filter__brand __f __d">
+				<div class="filter__input js__brand">По бренду</div>
+
+				<div class="filter__indicator __bi js__brand-close"></div>
+
+				<div class="filter__brand__vars">
+					<div class="filter__brand__vars-wrapper">
+						<div class="filter__brand__var js__brand-var">Doona</div>
+						<div class="filter__brand__var js__brand-var">Valcobaby</div>
+						<div class="filter__brand__var js__brand-var">Bumbleride</div>
+						<div class="filter__brand__var js__brand-var">Mifold</div>
+						<div class="filter__brand__var js__brand-var">Larktale</div>
+					</div>
+				</div>
+			</div>
+			<!-- /brand -->
+		</div>
+
+		<!-- availability -->
+		<div class="filter__availability __f">
+			<label class="filter__input js__availability" for="available">
+				В наличии
+			</label>
+
+			<div class="filter__indicator __bi js__availability"></div>
+
+			<input type="checkbox" id="available" />
+		</div>
+		<!-- /availability -->
+
+		<!-- brand m -->
+		<div class="filter__brand __f __m">
+			<div class="filter__input js__brand">По бренду</div>
+
+			<div class="filter__brand__vars">
+				<div class="filter__brand__vars-wrapper">
+					<div class="filter__brand__var filter__indicator--m js__brand-close">
+						Все бренды
+					</div>
+					<div class="filter__brand__var js__brand-var">Doona</div>
+					<div class="filter__brand__var js__brand-var">Valcobaby</div>
+					<div class="filter__brand__var js__brand-var">Bumbleride</div>
+					<div class="filter__brand__var js__brand-var">Mifold</div>
+					<div class="filter__brand__var js__brand-var">Larktale</div>
+				</div>
+			</div>
+		</div>
+		<!-- /brand m -->
+	</div>
+
+	<div class="filter__wrapper __f">
+		<!-- drag-images -->
+		<div class="filter__drag-images __f">
+			<div class="filter__indicator __bi js__drag-images"></div>
+
+			<label class="filter__input js__drag-images" for="drag-images">
+				Не отображать фото товара при наведении на ячейки
+			</label>
+
+			<input type="checkbox" id="drag-images" />
+		</div>
+		<!-- /drag-images -->
+	</div>
+</section>

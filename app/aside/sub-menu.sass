@@ -1,0 +1,44 @@
+// sub-menu
+.aside__sub-menu
+	display: none
+	.aside--active + &,
+	.aside__sub-menu.aside--active
+		display: block
+// sub-item
+.aside__sub-item
+	position: relative
+	padding-right: $p
+	&::before
+		position: absolute
+		content: ''
+
+		top: 50%
+		left: $p
+		height: 1px
+		@media (min-width: $d)
+			background-color: $c_sub-menu
+		@media (max-width: $m)
+			background-color: $border-color_m-menu
+		.aside__sub-menu &
+			width: $ps
+		.aside__sub-menu .aside__sub-menu &
+			width: 2 * $ps
+		.aside__sub-menu .aside__sub-menu .aside__sub-menu &
+			width: 3 * $ps
+	// --active
+	&.aside--active,
+	&:hover
+		@media (min-width: $d)
+			background-color: $c2
+		@media (max-width: $m)
+			background-color: $bc_op
+
+	// paddings
+	.aside__sub-menu &
+		padding-left: $p + $ps + 4px
+	.aside__sub-menu .aside__sub-menu &
+		padding-left: $p + 2 * $ps + 4px
+	.aside__sub-menu .aside__sub-menu .aside__sub-menu &
+		padding-left: $p + 3 * $ps + 4px
+	.aside__sub-menu .aside__sub-menu .aside__sub-menu .aside__sub-menu &
+		padding-left: $p + 4 * $ps + 4px

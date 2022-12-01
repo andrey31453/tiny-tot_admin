@@ -1,0 +1,41 @@
+.filter
+	font-size: $fz
+	@media (min-width: $d)
+		font-family: 'open-sans__semi-bold'
+	@media (max-width: $m)
+		font-family: 'open-sans__bold'
+
+.filter__wrapper
+	&:not(:first-child)
+		margin-top: $ps
+	@media (max-width: $m)
+
+		& > *
+			margin: $ps * 0.25 0
+		&:first-child
+			margin-top: $p
+	@media (max-width: 600px)
+		justify-content: flex-start
+
+.filter__input
+	padding: $ps
+	border-radius: $br
+	border: 1px solid $c2a
+	&:hover
+		border-color: $c2
+	&:not(.filter--search)
+		cursor: pointer
+
+.filter__indicator
+	width: 37px
+	height: 37px
+
+	border-radius: $br
+	border: 1px solid $c2a
+	cursor: pointer
+
+	background-repeat: no-repeat
+	background-position: center
+	background-size: auto
+	&:hover
+		border-color: $c2

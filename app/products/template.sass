@@ -1,0 +1,43 @@
+.products__list
+	position: relative
+
+	width: 100%
+	margin: $p 0
+
+	caption-side: bottom
+	border-collapse: collapse
+
+// tr-s
+.products__header
+	padding: $ps
+	font-family: 'open-sans__semi-bold'
+	.products__artikul
+		font-size: $fz
+	.products__remainder
+		text-align: left
+	td
+		padding: 6px 8px
+		background-color: #c5cace
+		&:first-child
+			border-radius: math.div($ps, 2) 0 0 math.div($ps, 2)
+		&:last-child
+			border-radius: 0 math.div($ps, 2) math.div($ps, 2) 0
+	@media (max-width: $m)
+		display: none
+
+.products__brand
+	font-family: 'open-sans__bold'
+	background: none !important
+	span
+		display: inline-block
+		margin: $ps 0
+		padding: math.div($ps, 2) $ps
+
+		background-color: #3e4e5d
+		border-radius: 3px
+		color: $fc2
+		font-size: 12pt
+		@media (max-width: $m)
+			margin-top: $ps
+	@media (max-width: $m)
+		text-align: center

@@ -1,0 +1,12 @@
+.filter__availability
+	.filter__input
+		border: none
+		cursor: pointer
+	.filter__indicator.filter--availability
+		background-image: url('images/filter/icons/yes.png')
+	&:hover .filter__indicator
+		border-color: $c2
+	input
+		display: none
+	@media (max-width: $m)
+		// flex-direction: row-reverse

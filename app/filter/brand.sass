@@ -1,0 +1,62 @@
+.filter__brand
+	position: relative
+	@media (min-width: $d)
+		padding-left: $pl
+		padding-right: $p
+	@media (max-width: 446px)
+		margin-left: $p !important
+	.filter__input
+		background-image: url('images/filter/icons/open.png')
+		background-repeat: no-repeat
+		background-position: calc(100% - 10px) center
+		background-size: auto
+		@media (min-width: $d)
+			width: 185px
+		@media (max-width: $m)
+			width: 150px
+		&:hover
+			background-image: url('images/filter/icons/close.png')
+	.filter__indicator
+		margin-left: $p
+		background-image: url('images/filter/icons/no.png')
+	.filter__indicator,
+	.filter__indicator--m
+		&:not(.filter__brand--active)
+			display: none
+
+.filter__brand__vars
+	position: absolute
+	z-index: 10
+
+	top: -1000px
+	height: 0
+
+	opacity: 0
+	cursor: pointer
+	transition: 0ms top, 600ms opacity
+
+	@media (min-width: $d)
+		left: $pl
+		right: $p
+	@media (max-width: $m)
+		left: 0
+		right: 0
+
+.filter__input:hover ~ .filter__brand__vars,
+.filter__brand__vars:hover
+	top: 100%
+	height: auto
+	opacity: 1
+
+.filter__brand__vars-wrapper
+	margin-top: $ps
+
+	background-color: $bc
+	border-radius: $br
+	border: 1px solid $c2
+
+.filter__brand__var
+	padding: $ps
+	border-radius: $br
+	&:hover
+		background-color: $c2a

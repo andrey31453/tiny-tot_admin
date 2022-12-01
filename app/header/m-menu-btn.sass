@@ -1,0 +1,25 @@
+.m-menu-btn
+	position: absolute
+
+	top: 20px - 1.5 * $ps
+	left: 20px - 1.5 * $ps
+
+	height: 20px + 3 * $ps
+	padding: 1.5 * $ps
+
+.m-menu-btn__item
+	width: 25px
+	height: 4px
+	background-color: $c
+	transition: 200ms all
+	.m-menu--active &
+		width: 30px
+		height: 5px
+		&:nth-child(1)
+			background-color: $fc2
+			transform: rotate(45deg) translatex(4px) translateY(6px)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			background-color: $fc2
+			transform: rotate(-45deg) translatex(4px) translateY(-7px)

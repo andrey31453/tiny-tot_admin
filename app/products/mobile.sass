@@ -1,0 +1,32 @@
+@media (max-width: $m)
+	.products__margin-tr td
+		padding-top: math.div($ps, 2)
+
+	.products__tr--chet
+		background-color: #d9e6ec
+
+	.products__tr--nechet
+		background-color: #f2f7f9
+
+	.products__tr--top
+		.products__name
+			display: none
+		td
+			&:first-child
+				border-radius: math.div($ps, 2) 0 0 0
+			&:last-child
+				border-radius: 0 math.div($ps, 2) 0 0
+
+	.products__tr--bottom td
+		border-top: 1px solid #c3d5dd
+		border-radius: 0 0 math.div($ps, 2) math.div($ps, 2)
+	.products__name
+		img
+			display: none
+
+@media (min-width: $d)
+	.products__tr--bottom
+		display: none
+	.products__margin-tr td
+		height: 0
+		padding: 0

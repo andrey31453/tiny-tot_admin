@@ -1,0 +1,31 @@
+// td-s
+.products__artikul
+	font-size: $fzs
+	font-family: 'open-sans__semi-bold'
+
+.products__name
+	padding-right: 35px
+	@media (max-width: $m)
+		font-family: 'open-sans__bold'
+
+.products__ppc
+	font-family: 'open-sans__semi-bold'
+	@media (min-width: $d)
+		min-width: 100px
+	@media (max-width: $m)
+		text-align: right
+
+.products__remainder
+	@media (max-width: $m)
+		text-align: center
+
+.products__image
+	position: absolute
+	z-index: 5
+
+	border-radius: $br
+	border-top-left-radius: 0
+	background-color: $bc
+	box-shadow: 5px 5px 15px #00000020
+
+	transition: 0ms all

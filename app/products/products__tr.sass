@@ -1,0 +1,28 @@
+.products__tr
+	position: relative
+	z-index: 1
+
+	padding: $ps
+	cursor: pointer
+	td
+		padding: 6px 8px
+	&:hover
+		td
+			color: $fc2
+			background-color: $c !important
+			border-color: 1px solid #d8d8d8
+	@media (min-width: $d)
+		&:nth-child(2n) td
+			background-color: #f1f1f1
+		td
+			&:first-child
+				border-radius: math.div($ps, 2) 0 0 math.div($ps, 2)
+			&:last-child
+				border-radius: 0 math.div($ps, 2) math.div($ps, 2) 0
+			&:not(:first-child)
+				border-left: 1px solid $c2
+	@media (max-width: $m)
+		td
+			margin: $ps 0
+		td:not(.products__name)
+			color: $c_add_m

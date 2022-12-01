@@ -1,0 +1,45 @@
+.product__heading
+	font-family: 'open-sans__bold'
+	font-size: 24px
+	text-align: center
+	@media (min-width: $d)
+		margin-bottom: $p
+	@media (max-width: $m)
+		margin: $p
+
+.product__params
+	margin-bottom: 20px
+
+.product__param
+	font-size: $fzl
+	&:not(:last-child)
+		border-bottom: 1px solid $c3a
+	@media (min-width: $d)
+		padding-top: 2 * $ps
+		padding-bottom: 2 * $ps
+	@media (max-width: $m)
+		padding-top: 1.5 * $ps
+		padding-bottom: 1.5 * $ps
+		text-align: center
+		flex-direction: column
+
+.product__param-name
+	@media (min-width: $d)
+		padding-left: $p
+		padding-right: $ps
+
+		color: $c3
+	@media (max-width: $m)
+		color: $c_add_m
+
+.product__param-value
+	@media (min-width: $d)
+		padding-left: $ps
+		padding-right: $p
+	@media (max-width: $m)
+		color: $c_add_m
+	.product--important &
+		font-family: 'open-sans__bold'
+
+.product__img
+	max-width: 100%

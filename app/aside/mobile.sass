@@ -1,0 +1,16 @@
+.aside
+	@media (max-width: $m)
+		position: fixed
+		z-index: 5
+
+		top: -100vh
+		left: 0
+		right: 0
+		height: calc(100vh - $m_height_m)
+
+		overflow: auto
+		background-color: $c
+		color: $fc2
+
+	.m-menu--active &
+		top: $m_height_m

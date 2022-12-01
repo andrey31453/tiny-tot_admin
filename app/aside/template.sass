@@ -1,0 +1,36 @@
+.aside
+	@media (min-width: $d)
+		width: 20%
+		min-width: 255px
+	ul
+		margin-bottom: 0
+	ul:not(.aside__menu)
+		margin-top: 0
+		padding-left: 0
+	li
+		margin-left: 0
+		padding-top: $ps
+		padding-bottom: $ps
+
+		overflow: hidden
+		list-style: none
+		cursor: pointer
+		border-radius: $br
+
+.aside__wrapper
+	@media (min-width: $d)
+		background-color: $c2a
+		border-radius: $br
+	@media (max-width: $m)
+		padding-bottom: 100px
+
+.aside__menu
+	overflow: hidden
+	border-radius: $br
+	@media (min-width: $d)
+		margin-top: 0
+		padding-left: 0
+	@media (max-width: $m)
+		margin-top: 2 * $ps
+		padding-left: $p
+		padding-right: $p

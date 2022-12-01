@@ -1,0 +1,28 @@
+.header
+	width: 100%
+	@media (min-width: $d)
+		height: $m_height_d
+	@media (max-width: $m)
+		position: relative
+		z-index: 10
+		height: $m_height_m
+	.m-menu--active &
+		background-color: $c
+		color: $fc2
+
+.header__wrapper
+	@media (max-width: $m)
+		position: relative
+		border-bottom: 1px solid $c
+		justify-content: center
+		.m-menu--active &
+			border-bottom-color: $border-color_m-menu
+
+.header__item
+	color: $c
+	@media (min-width: $d)
+		height: $m_height_d
+	@media (max-width: $m)
+		height: $m_height_m
+	&:not(:first-child)
+		padding-left: $p

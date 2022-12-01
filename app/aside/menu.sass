@@ -1,0 +1,21 @@
+.aside__item
+	padding-left: $p
+	padding-right: $p
+
+	font-family: 'open-sans__bold'
+	font-size: $fzl
+	&:hover
+		@media (min-width: $d)
+			background-color: $c2
+	&.aside--active
+		@media (min-width: $d)
+			background-color: $c
+			color: $fc2
+		@media (max-width: $m)
+			margin-top: $ps
+			margin-bottom: $ps
+			background-color: $bc_op
+	&:not(.aside--active)
+		@media (max-width: $m)
+			padding-top: 2 * $ps
+			padding-bottom: 2 * $ps
